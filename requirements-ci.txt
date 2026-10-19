@@ -1,0 +1,8 @@
+# Minimal offline product-analytics test/runtime environment (no BigQuery/cloud clients).
+# Use Python >=3.11. Other optional starter dependencies remain in requirements.txt.
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.14,<2
+statsmodels>=0.14,<0.15
+pydantic>=2.8,<3
+pytest>=8.3,<10

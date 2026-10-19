@@ -1,0 +1,54 @@
+{
+  "allocation": {
+    "A": 0.5,
+    "B": 0.5
+  },
+  "analysis_population": "intention_to_treat_all_randomized_users_full_7d_followup",
+  "causal_policy": "randomization_demonstration_only; no_real_world_treatment_effect_claim",
+  "classification": "SYNTHETIC_OFFLINE_ONLY",
+  "cuped_policy": "skip_primary_without_verifiable_preassignment_covariate; separate_synthetic_continuous_demo_only",
+  "design_id": "CP3-V1-LOCKED-SYNTHETIC-2026-10-19",
+  "exposure_gate": "exactly_one_exposure_for_every_randomized_user_and_no_postassignment_filtering",
+  "guardrails": {
+    "bounce_first_session": {
+      "maximum_absolute_risk_increase": 0.01
+    },
+    "error_7d": {
+      "maximum_absolute_risk_increase": 0.005
+    }
+  },
+  "guardrails_familywise_one_sided_alpha": 0.025,
+  "multiplicity_primary": "one_confirmatory_primary_outcome",
+  "observation_end_utc": "2026-02-09T00:00:00+00:00",
+  "power_policy": "block_release_if_below_minimum_planned_sample_even_if_p_below_alpha",
+  "primary": {
+    "absolute_mde": 0.005,
+    "alpha": 0.05,
+    "alternative": "two-sided",
+    "baseline_planning_probability": 0.1,
+    "desired_power": 0.8,
+    "direction": "higher_is_better",
+    "name": "binary_purchase_within_7d_of_qualifying_exposure",
+    "relative_mde": 0.05
+  },
+  "product_surface": "synthetic_ecommerce_landing_page",
+  "randomization_unit": "user_id",
+  "repeated_looks": "one_fixed_sample_look_only_no_optional_stopping",
+  "secondary_policy": "no_other_confirmatory_secondary_efficacy_outcomes",
+  "srm_exact_two_sided_alpha": 0.001,
+  "subgroup_dimensions": {
+    "channel": [
+      "organic",
+      "paid_search",
+      "email",
+      "direct",
+      "social"
+    ],
+    "device": [
+      "mobile",
+      "desktop",
+      "tablet"
+    ]
+  },
+  "subgroup_method": "group_versus_complement_interaction_wald_p_values_with_holm_adjustment_exploratory_only"
+}

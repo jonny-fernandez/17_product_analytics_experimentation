@@ -1,0 +1,106 @@
+{
+  "status": "FINAL_PREPUBLICATION_SET_COMPLETE_GITHUB_CI_PENDING",
+  "description": "Genuine source screenshots from the user. Screenshot set is complete for prepublication; Github CI screenshot (08) is pending. Git index must be reaudited after adding publication assets.",
+  "images": [
+    {
+      "filename": "01_cp4_windows_py312_tests.png",
+      "original_uploaded_screenshot": "image(20261019-112417).png",
+      "crop_px": [
+        0,
+        220,
+        914,
+        600
+      ],
+      "sha256": "27acce27547dbbb473dda3927acc934a916bd592cc6e700d45603a27cf15dd7d"
+    },
+    {
+      "filename": "01b_cp4_python312_environment.png",
+      "original_uploaded_screenshot": "image(20261019-112013).png",
+      "crop_px": [
+        0,
+        385,
+        878,
+        755
+      ],
+      "sha256": "df263488362c416390c1b46306f0a87a2f32229b9edf1c8df0f07e2158820332"
+    },
+    {
+      "filename": "02_cp4_baseline_kpis_parity.png",
+      "original_uploaded_screenshot": "image(20261019-102219).png",
+      "crop_px": [
+        0,
+        0,
+        1276,
+        290
+      ],
+      "sha256": "e014ffc98323070542115665e69567cb1281462571e2b5a2a37a1be20607c925"
+    },
+    {
+      "filename": "03_cp4_ordered_funnel.png",
+      "original_uploaded_screenshot": "image(20261019-102219).png",
+      "crop_px": [
+        15,
+        265,
+        1222,
+        720
+      ],
+      "sha256": "7ca9e421840b7b6946b8c898428b3e45dc68667650d02d12116d8ed722077ea4"
+    },
+    {
+      "filename": "04a_cp4_retention.png",
+      "original_uploaded_screenshot": "image(20261019-102241).png",
+      "crop_px": [
+        0,
+        532,
+        1208,
+        924
+      ],
+      "sha256": "4cc4999cf96cd78fb63c226de93d2a010efd9f8db6b7e042df96d2cd5aaeaa03"
+    },
+    {
+      "filename": "04b_cp4_descriptive_attribution.png",
+      "original_uploaded_screenshot": "image(20261019-102320).png",
+      "crop_px": [
+        0,
+        0,
+        1294,
+        690
+      ],
+      "sha256": "968fc5067e9838be9a8bd876c90f12ff2848016ce2659ec85b37c55f22eff21a"
+    },
+    {
+      "filename": "05_cp4_positive_release_block.png",
+      "original_uploaded_screenshot": "p17_screenshots_received/05_cp4_positive_release_block.PNG",
+      "crop_px": null,
+      "sha256": "84a3f71a794814c244c7967544e9fbb3887bca48d8369d0cdd808a0c00c11875"
+    },
+    {
+      "filename": "06_cp4_srm_underpowered.png",
+      "original_uploaded_screenshot": "image(20261019-110254).png",
+      "crop_px": [
+        0,
+        0,
+        905,
+        972
+      ],
+      "sha256": "32cf176921331d9843fb635929e89334aeed4606395b679f6eb01d10a23bba7f"
+    },
+    {
+      "filename": "07_cp4_security_evidence_audit.png",
+      "original_uploaded_screenshot": "image(20261019-112417).png",
+      "crop_px": [
+        0,
+        480,
+        914,
+        802
+      ],
+      "sha256": "487b017a00c759f76a0c3332c9981455a2c4465a3f8369e9b6d7816759b0695a"
+    },
+    {
+      "filename": "07b_cp4_windows_completed.png",
+      "original_uploaded_screenshot": "image(20261019-112435).png",
+      "crop_px": null,
+      "sha256": "413474c0b8ce23d6362bf82acc0d14bc7dbada2f10175dfb75cd6bab84072d40"
+    }
+  ]
+}

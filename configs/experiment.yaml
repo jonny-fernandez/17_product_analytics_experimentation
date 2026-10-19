@@ -1,0 +1,32 @@
+# CP1 draft only. DO NOT perform final outcome analysis until this is frozen in CP3.
+product:
+  product_surface: synthetic_ecommerce_landing_page
+  primary_kpi: seven_day_user_purchase_conversion
+  guardrail_metrics:
+    - exposed_user_error_incidence
+    - first_session_bounce_rate
+
+experiment:
+  experiment_id: landing_page_test
+  design_status: DRAFT_NOT_LOCKED
+  randomization_unit: user_id
+  assignment_policy: one_stable_assignment_per_user
+  analysis_population_candidate: eligible_exposed_users_complete_followup
+  exposure_selection_bias_requires_review: true
+  primary_window_days: 7
+  alpha: 0.05
+  power: 0.80
+  allocation_ratio: 0.50
+  planning_baseline_rate: 0.10
+  minimum_detectable_effect_relative: 0.05
+  minimum_detectable_effect_absolute: 0.005
+  planned_srm_pvalue_threshold: 0.001
+  duration_days: null # Require actual traffic and full outcome window before design lock
+
+analysis:
+  multiple_testing_method: holm
+  predefined_subgroups:
+    - device
+    - acquisition_channel
+  cuped_policy: strictly_pre_assignment_covariates_only_or_skip
+  observational_attribution_is_causal: false
