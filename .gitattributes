@@ -1,0 +1,3 @@
+# Keep preregistration byte integrity identical on Windows and Unix.
+configs/cp3_preregistered_design.json text eol=lf
+configs/cp3_preregistered_design.sha256 text eol=lf
