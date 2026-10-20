@@ -40,3 +40,6 @@ jobs:
           python -m product_analytics.data.cp1_report --scenario baseline --users 50 --seed 42 --out-dir artifacts/ci_cp1
           python -m product_analytics.data.cp2_report --scenario baseline --users 50 --seed 42 --out-dir artifacts/ci_cp2
           python -m product_analytics.data.cp3_report --scenario underpowered --users 60 --seed 1706 --out-dir artifacts/ci_cp3
+      - name: Reproduce synthetic instrumented event ingestion and Python-SQL parity
+        run: |
+          python -m product_analytics.instrumentation.demo --db artifacts/ci_instrumentation/events.sqlite --out-dir artifacts/ci_instrumentation --users 24 --seed 1707

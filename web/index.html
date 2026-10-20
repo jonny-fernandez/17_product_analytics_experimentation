@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project 17 — Instrumented product demo</title>
+<style>
+body{font:16px/1.55 system-ui,Arial,sans-serif;max-width:760px;margin:28px auto;padding:0 20px;color:#152037}
+button{background:#194a8b;color:white;border:0;border-radius:8px;padding:12px 16px;margin:6px 6px 6px 0;cursor:pointer}
+button:disabled{background:#aaa;cursor:not-allowed}pre{white-space:pre-wrap;background:#f1f3f6;padding:16px;border-radius:8px}
+small{display:block;color:#545e6b}section{padding:18px;border:1px solid #ddd;border-radius:12px;margin:20px 0}
+</style>
+</head>
+<body>
+<h1>Project 17 — Local event tracking</h1>
+<p>A synthetic-only event instrumentation demonstration. No real checkout, customer data or analytics platform is used.</p>
+<section><label><input id="consent" type="checkbox"> I consent to this local synthetic analytics demo.</label>
+<small>Until selected, this browser sends no tracking events. No personal identifiers or cookies are collected.</small>
+<button id="start">Start simulated session</button></section>
+<section><h2>Mock storefront</h2><p>Sample item: a fictional $25 product.</p>
+<button id="view" disabled>View product</button><button id="cart" disabled>Add to cart</button>
+<button id="checkout" disabled>Start checkout</button><button id="purchase" disabled>Confirm simulated order</button>
+</section>
+<section><h2>Quality monitor</h2><button id="refresh">Refresh</button><pre id="result">No events yet.</pre></section>
+<script src="/app.js" defer></script>
+</body></html>

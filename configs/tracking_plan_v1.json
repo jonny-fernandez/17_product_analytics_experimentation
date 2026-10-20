@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "owner": "portfolio_demo_data_governance",
+    "purpose": "Synthetic-only, consent-aware first-party analytics lab",
+    "allowed_id_prefixes": ["u_", "s_", "evt_"],
+    "forbidden_data": "No emails, names, IP addresses, cookies, arbitrary properties or identifiers tied to actual people",
+    "retention": "Local SQLite demonstration database; operator deletes it when finished",
+    "deprecation": "Version changes must introduce a new tracking plan and explicit adapter; unknown versions quarantine"
+  },
+  "events": {
+    "experiment_assigned": {"canonical": "experiment_assignment", "source": "server", "properties": {}, "description": "Assignment recorded once for the synthetic actor"},
+    "session_started": {"canonical": "session_start", "source": "server", "properties": {}, "description": "Session begins after assignment"},
+    "experiment_exposed": {"canonical": "experiment_exposure", "source": "server", "properties": {}, "description": "Exposure recorded after session start"},
+    "product_viewed": {"canonical": "view_item", "source": "client", "properties": {}, "description": "Consented user viewed a sample product"},
+    "cart_item_added": {"canonical": "add_to_cart", "source": "client", "properties": {}, "description": "Consented user added a sample item"},
+    "checkout_started": {"canonical": "begin_checkout", "source": "client", "properties": {}, "description": "Consented user opened checkout"},
+    "order_purchased": {"canonical": "purchase", "source": "server", "properties": {"revenue": "positive_number"}, "description": "Server confirms a fictional order; never client-supplied revenue"}
+  }
+}
